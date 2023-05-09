@@ -2,7 +2,7 @@
 
 const Advertising = () =>{
     return(
-        <div className=" border border-gray-500 w p-3 flex flex-row">
+        <div className=" border border-gray-500  p-3 flex flex-row">
             <div>
                 <img className="w-16 h-16"  src="./p/sib.jpg" alt="" ></img>
             </div>

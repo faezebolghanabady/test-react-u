@@ -21,9 +21,9 @@ const Landing = () =>{
     <div  dir="rtl">
         <div clas className='flex flex-row'>
            <div>
-            <div>
+            <div className=''>
                 <p className='dir=ltr mt-5 p-3 mr-6  text-teal-600'>داروهای مازاد</p>
-                <div className=' mr-16'>
+                <div className='mr-16'>
                 <Advertising/>
                 </div>
                 <div className='mr-16 pt-5'>
