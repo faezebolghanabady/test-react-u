@@ -9,10 +9,10 @@ const Landing = () =>{
                 <p className="text-white text-lg">های دارو</p>
             </div>
 
-            <div className="flex flex-col m-2">
-                <p className="text-white">تامین دارو مورد نیاز هر داروخانه</p>
-                <p className=" text-white flex"> <span className="text-yellow-600"> های دارو </span> با سامانه جامع  </p>
-                <button className= "bg-red-500 rounded text-center p-2 mt-2 text-white">ثبت نام/ ورود</button>
+            <div className="flex flex-col m-2 w-4/5 p-">
+                <p className="text-white text-2xl">تامین دارو مورد نیاز هر داروخانه</p>
+                <p className=" ml-16 text-white flex"> <span className="text-yellow-600"> های دارو </span> با سامانه جامع  </p>
+                <button className= "bg-red-500 rounded text-center p-2 mt-2  text-white w-52 ml-10">ثبت نام/ ورود</button>
             </div>
 
         </div>
@@ -49,6 +49,8 @@ const Landing = () =>{
                 <div className='mr-10'>
                 <p>1.استامینوفن</p>
                 <p>2.سفکسیم</p>
+                <p>..3</p>
+                <p>..4</p>
                 </div>
             </div>
            </div>
