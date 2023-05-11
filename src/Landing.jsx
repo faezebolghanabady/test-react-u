@@ -1,6 +1,16 @@
 import Advertising from './Advertising';
+import { useState } from 'react';
 
 const Landing = () =>{
+
+    const [ product , productName] = useState ([
+        {name:'داروخانه دکتر طلایی' , productName: 'نام محصول' , city:'خراسان رضوی مشهد'},
+        {name:'داروخانه دکتر محمدی' , productName: 'نام محصول' , city:'خراسان رضوی سبزوار'},
+        {name:'داروخانه دکتر شفیعی' , productName: 'نام محصول' , city:'خراسان رضوی کلات'},
+        {name:'داروخانه دکتر عباس زاده' , productName: 'نام محصول' , city:'خراسان رضوی نیشابور'}
+    ])
+    
+    
     return(
         <>
         <div className=" w-full inset-y-6   flex flex-row-reverse bg-blue-800 h-31">
@@ -23,11 +33,11 @@ const Landing = () =>{
            <div className=' w-4/5 '>
             <div className=''>
                 <p className=' mt-5 p-3 mr-6  text-teal-600'>داروهای مازاد</p>
-                <div className='mr-16'>
-                <Advertising/>
-                </div>
-                <div className='mr-16 pt-5'>
-                <Advertising/>
+                <div className=' mr-16'>
+                    {product.map(( p , index ) =>(
+                        <Advertising  name = {p.name}  productName = {p.productName} city = {p.city} />
+                    ))}
+              
                 </div>
 
             </div>

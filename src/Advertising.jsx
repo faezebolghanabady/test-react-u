@@ -1,6 +1,6 @@
 
 
-const Advertising = () =>{
+const Advertising = ({productName , city , name}) =>{
     return(
         <div className=" border border-gray-500  p-3 flex flex-row">
             <div>
@@ -8,9 +8,9 @@ const Advertising = () =>{
             </div>
 
             <div className="mr-3">
-                <p>داروخانه دکتر طلایی</p>
-                <p>نام محصول</p>
-                <p>خراسان رضوی مشهد</p>
+                <p>{name}</p>
+                <p>{productName}</p>
+                <p>{city}</p>
             </div>
 
             <div>
