@@ -6,6 +6,9 @@ const Landing = () =>{
     const [ product , productName] = useState ([
         {name:'داروخانه دکتر طلایی' , productName: 'نام محصول' , city:'خراسان رضوی مشهد'},
         {name:'داروخانه دکتر محمدی' , productName: 'نام محصول' , city:'خراسان رضوی سبزوار'},
+    ])
+
+    const [ productAliquot , productAliquotName] = useState([
         {name:'داروخانه دکتر شفیعی' , productName: 'نام محصول' , city:'خراسان رضوی کلات'},
         {name:'داروخانه دکتر عباس زاده' , productName: 'نام محصول' , city:'خراسان رضوی نیشابور'}
     ])
@@ -44,10 +47,9 @@ const Landing = () =>{
             <div>
                 <p className='mt-5 p-3 mr-6 text-teal-600'>داروهای کسری</p>
                 <div className=' mr-16'>
-                <Advertising/>
-                </div>
-                <div className='mr-16 pt-5'>
-                <Advertising/>
+                    {productAliquot.map(( p , index) =>(
+                        <Advertising name={p.name}  productName={p.productName} city={p.city} />
+                    ))}
                 </div>
             </div>
            </div>
