@@ -1,8 +1,11 @@
 import {useState} from 'react';
+import { useContext } from "react";
+import productContext from './context/products'
 
-const FCount = ({productName , count:propCount , id , onDelete}) => {
+const FCount = ({productName , count , id}) => {
 
-    const [count , setcount] = useState(propCount);
+    
+    const procontext = useContext(productContext);
 
     return(
         <div className=' m-5  border border-l-indigo-600'>
@@ -32,15 +35,15 @@ const FCount = ({productName , count:propCount , id , onDelete}) => {
 
 
     function handleIncrement (){
-        setcount(count +1)
+        procontext.onIncrement(id)
        }
     
     function handleDecrement (){
-        setcount(count -1)
+        procontext.onDecrement(id)
     }
 
     function handleDelete (){
-        onDelete(id);
+        procontext.onDelete(id)
 
     }
 

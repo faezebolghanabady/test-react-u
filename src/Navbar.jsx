@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import productContext from './context/products'
 
 const Navbar = (props) => {
+
+  const procontext = useContext(productContext);
+
     return(
         <div>
             
@@ -28,7 +33,7 @@ const Navbar = (props) => {
 
     function calculateSum (){
         let sum = 0;
-        props.products.forEach( p =>{
+        procontext.products.forEach( p =>{
             sum += p.count;
         })
         return sum;
