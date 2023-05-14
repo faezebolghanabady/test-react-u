@@ -5,16 +5,18 @@ const FCount = ({productName , count:propCount , id , onDelete}) => {
     const [count , setcount] = useState(propCount);
 
     return(
-        <div>
+        <div className=' m-5  border border-l-indigo-600'>
         <span className=" m-2">{productName }</span>
         <br/>
         <span>{format(count)}</span>
         <br/>
-        <button onClick={handleIncrement}> + </button>
+        <div className='p-4 '>
+        <button className='bg-lime-500 hover:bg-lime-700 text-white font-bold m-2 py-2 px-4 rounded' onClick={handleIncrement}> + </button>
         <br/>
-        <button onClick={handleDecrement}> - </button>
+        <button className='bg-red-500 hover:bg-red-700 text-white font-bold m-2 py-2 px-4 rounded' onClick={handleDecrement}> - </button>
         <br/>
-        <button onClick={handleDelete}>delete</button>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold m-2 py-2 px-4 rounded' onClick={handleDelete}>delete</button>
+        </div>
     </div>
     )
 
