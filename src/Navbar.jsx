@@ -29,8 +29,7 @@ const Navbar = (props) => {
     function calculateSum (){
         let sum = 0;
         props.products.forEach( p =>{
-            sum += p.count
-    
+            sum += p.count;
         })
         return sum;
         
