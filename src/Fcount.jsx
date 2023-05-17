@@ -9,11 +9,13 @@ const FCount = ({productName , count , id}) => {
 
     return(
         <div className=' m-5  border border-l-indigo-600'>
-        <span className=" m-2">{productName }</span>
+        <span className=" p-4 m-2">{productName }</span>
         <br/>
-        <span>{format(count)}</span>
+        <div className='ml-6 mt-3'>
+        <span className=' p-1 px-3 border border-black'>{format(count)}</span>
+        </div>
         <br/>
-        <div className='p-4 '>
+        <div className='p-2 '>
         <button className='bg-lime-500 hover:bg-lime-700 text-white font-bold m-2 py-2 px-4 rounded' onClick={handleIncrement}> + </button>
         <br/>
         <button className='bg-red-500 hover:bg-red-700 text-white font-bold m-2 py-2 px-4 rounded' onClick={handleDecrement}> - </button>
