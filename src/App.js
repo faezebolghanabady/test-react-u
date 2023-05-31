@@ -21,6 +21,9 @@ const App = () =>{
         console.log('app')
     } , [])
 
+    useEffect(() =>{
+        console.log('App2')
+    })
 
     return(
         <>
