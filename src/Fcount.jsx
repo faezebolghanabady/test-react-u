@@ -1,12 +1,11 @@
 import {useState} from 'react';
-import { useContext } from "react";
+import { useContext , useEffect } from "react";
 import productContext from './context/products'
 
 const FCount = ({productName , count , id}) => {
 
     
     const procontext = useContext(productContext);
-
     return(
         <div className=' m-5  border border-l-indigo-600'>
         <span className=" p-4 m-2">{productName }</span>

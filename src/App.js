@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import { Component } from "react";
 import FCounts from "./Fcounts";
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import productContext from './context/products'
 
 
@@ -16,6 +16,11 @@ const App = () =>{
         {id:3 , count: 8, productName:'airpods'},
         {id:4 , count:9 , productName:'battery charger'}
     ])
+
+    useEffect(() =>{
+        console.log('app')
+    } , [])
+
 
     return(
         <>
