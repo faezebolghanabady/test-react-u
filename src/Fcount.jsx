@@ -6,6 +6,13 @@ const FCount = ({productName , count , id}) => {
 
     
     const procontext = useContext(productContext);
+
+    useEffect(()=>{
+        return()=>{
+            console.log('product-unmount')
+        }
+    } , [])
+
     return(
         <div className=' m-5  border border-l-indigo-600'>
         <span className=" p-4 m-2">{productName }</span>
